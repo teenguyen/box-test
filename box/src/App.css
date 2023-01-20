@@ -1,0 +1,41 @@
+.App {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+#box-company-logo {
+  height: 200px;
+  pointer-events: none;
+}
+
+.add-task {
+  display: grid;
+  grid-template-areas:
+    "label input button"
+    ". list list";
+  row-gap: 1rem;
+  column-gap: 0.25rem;
+}
+
+.add-task-label {
+  grid-area: label;
+}
+.add-task-input {
+  grid-area: input;
+}
+.add-task-button {
+  grid-area: button;
+}
+.task-list {
+  grid-area: list;
+  margin: 0;
+  padding: 0;
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+}

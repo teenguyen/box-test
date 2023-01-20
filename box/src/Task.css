@@ -1,0 +1,15 @@
+.task-item {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  list-style-type: none;
+}
+
+.task-item-checkbox {
+  margin: 0;
+}
+
+.task-item-checkbox:checked + .task-item-label {
+  color: grey;
+  text-decoration: line-through;
+}
